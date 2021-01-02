@@ -76,3 +76,5 @@ A massive thank you to our community sponsors!
 ## My solution
 
 You can see my solution at this link [ProfileCardComponent](https://gabrielfierro.github.io/ProfileCardComponent/)
+
+Builded with the framework Tailwind <a href="https://tailwindcss.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="30" height="30"/> </a>
