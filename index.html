@@ -18,55 +18,51 @@
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
+    <link href="/tailwind.css" rel="stylesheet">
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
-    <div>
-      <img
-        class="background_circle_top"
-        src="images/Bg-pattern-top.svg"
-        alt="circle in the top"
-      />
+    <div class="background_circle_top">
+      <!--<img class="background_circle_top" src="images/Bg-pattern-top.svg">-->
     </div>
-    <div>
-      <img
-        class="background_circle_bottom"
-        src="images/Bg-pattern-bottom.svg"
-        alt="circle in the bottom"
-      />
+    <div class="background_circle_bottom">
+      <!--<img class="background_circle_bottom" src="images/Bg-pattern-bottom.svg">-->
     </div>
-    <div class="container">
-      <card class="card">
-        <div>
-          <img class="background_top" src="images/Bg-pattern-card.svg" alt="background with circles"/>
+    <!-- Card -->
+    <div class="absolute w-72 sm:w-80 md:w-96 lg:w-80 h-4/6 bg-white left-0 sm:left-1/3 ml-4 sm:ml-24 md:ml-0 lg:ml-28 mt-12 sm:mt-32 xl:mt-24 rounded-2xl shadow-lg">
+      <!-- Top background -->
+      <div class="card-background w-full h-1/3 rounded-t-2xl"></div>
+      <!-- Profile image -->
+      <div class="-ml-1 sm:ml-3 md:ml-12 lg:ml-4">
+        <img class="relative -mt-12 ml-24 rounded-full border-4" src="images/Image-victor.JPG">
+      </div>
+      <!-- Body of card background -->
+      <div>
+        <!-- Name, age and city -->
+        <div class="mt-4 md:mt-8 xl:mt-4 text-center">
+          <h1 class="title">Victor Crest <span class="paragraph">26</span>
+          </h1>
+          <p class="paragraph mb-7 mt-2 md:mt-2 lg:mt-2 md:mb-6 lg:mb-10">London</p>
         </div>
-        <div>
-          <img class="picture" src="images/Image-victor.JPG" alt="A front person"/>
-        </div>
-        <div class="middle_card">
-          <h1>Victor Crest <span> 26</span></h1>
-          <p>London</p>
-        </div>
-        <div class="footer_card">
-          <div class="columns">
-            <div class="footer">
-              <h1>80K</h1>
-              <p>Followers</p>
-            </div>
-            <div class="footer">
-              <h1>803K</h1>
-              <p>Likes</p>
-            </div>
-            <div class="footer">
-              <h1>1.4K</h1>
-              <p>Photos</p>
-            </div>
+        <hr>
+        <!-- Followers -->
+        <div class="flex flex-row justify-around mt-4 md:mt-6 lg:mt-14 xl:mt-6 pt-2 mx-6 text-center">
+          <div>
+            <h1 class="title">80K</h1>
+            <p class="paragraph">Followers</p>
+          </div>
+          <div>
+            <h1 class="title">803K</h1>
+            <p class="paragraph">Likes</p>
+          </div>
+          <div>
+            <h1 class="title">1.4K</h1>
+            <p class="paragraph">Photos</p>
           </div>
         </div>
-      </card>
+      </div>
     </div>
-    <div class="attribution">
+    <div class="attribution h-16 ml-4 sm:ml-0 mb-10 sm:mb-0 lg:-mb-6 md:-mt-4 sm:text-2xl lg:text-lg xl:text-xl">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
